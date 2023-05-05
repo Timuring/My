@@ -1,0 +1,70 @@
+﻿<Window x:Class="ООО_ФЛОРИСТ_1.Windows.AddProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ООО_ФЛОРИСТ_1.Windows"
+        mc:Ignorable="d"
+        Title="Добавить продукт" Height="550" Width="600" FontFamily="Comic Sans MS" FontSize="20">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFCC99">
+            <Label/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="230">Артикул</TextBlock>
+                <TextBox x:Name="Article" Width="300"></TextBox>
+            </StackPanel>
+            <Label/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="230">Название</TextBlock>
+                <TextBox x:Name="Title" Width="300" ></TextBox>
+            </StackPanel>
+            <Label/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="230">Единица измерения</TextBlock>
+                <ComboBox x:Name="Unit" Width="300" Background="#FFCC6600"></ComboBox>
+            </StackPanel>
+            <Label/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="230">Стоимость</TextBlock>
+                <TextBox x:Name="Cost" Width="300"></TextBox>
+            </StackPanel>
+            <Label/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="230">Максимальная скидка</TextBlock>
+                <TextBox x:Name="MaxDiscount" Width="300"></TextBox>
+            </StackPanel>
+            <Label/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="230">Производитель</TextBlock>
+                <ComboBox x:Name="Manufacturer" Width="300" Background="#FFCC6600"></ComboBox>
+            </StackPanel>
+            <Label/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="230">Поставщик</TextBlock>
+                <ComboBox x:Name="Supplier" Width="300" Background="#FFCC6600"></ComboBox>
+            </StackPanel>
+            <Label/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="230">Категория</TextBlock>
+                <ComboBox x:Name="Category" Width="300" Background="#FFCC6600"></ComboBox>
+            </StackPanel>
+            <Label/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="230">Скидка</TextBlock>
+                <TextBox x:Name="Discount" Width="300"></TextBox>
+            </StackPanel>
+            <Label/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="230">Количество на складе</TextBlock>
+                <TextBox x:Name="Stock" Width="300"></TextBox>
+            </StackPanel>
+            <Label/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="230">Описание</TextBlock>
+                <TextBox x:Name="Description" Width="300"></TextBox>
+            </StackPanel>
+            <Label/>
+            <Button x:Name="Add" Click="Add_Click" Background="#FFCC6600">Добавить</Button>
+        </StackPanel>
+    </Grid>
+</Window>

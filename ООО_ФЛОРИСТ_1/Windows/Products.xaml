@@ -1,0 +1,49 @@
+﻿<Window x:Class="ООО_ФЛОРИСТ_1.Windows.Products"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ООО_ФЛОРИСТ_1.Windows"
+        mc:Ignorable="d"
+        Title="Продукты" MinHeight="820" MinWidth="1400" FontSize="20" FontFamily="Comic Sans MS" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="784">
+            <Label x:Name="dolj" Content="Вы вошли как гость" HorizontalAlignment="Right"/>
+            <Label x:Name="name" Content="" HorizontalAlignment="Right"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock VerticalAlignment="Center">Поиск:</TextBlock>
+                <Label/>
+                <TextBox x:Name="Search" Width="300" TextChanged="Search_TextChanged"/>
+                <Label/>
+                <TextBlock VerticalAlignment="Center">Фильтрация:</TextBlock>
+                <Label/>
+                <ComboBox x:Name="Filtration" Width="200" DropDownClosed="Filtration_DropDownClosed">
+                    <ComboBoxItem>Все диапазоны</ComboBoxItem>
+                    <ComboBoxItem>0-9.99%</ComboBoxItem>
+                    <ComboBoxItem>10-14.99%</ComboBoxItem>
+                    <ComboBoxItem>15% и больше</ComboBoxItem>
+                </ComboBox>
+                <Label/>
+                <TextBlock VerticalAlignment="Center">Сортировка:</TextBlock>
+                <Label/>
+                <StackPanel>
+                    <RadioButton x:Name="Asc" Checked="Asc_Checked">По возрастанию</RadioButton>
+                    <RadioButton x:Name="Desc" Checked="Desc_Checked">По убыванию</RadioButton>
+                </StackPanel>
+                <Label/>
+                <Button x:Name="Add" Background="#FFCC6600" Click="Add_Click" Visibility="Hidden">Добавить</Button>
+                <Label/>
+                <Button x:Name="Delete" Background="#FFCC6600" Click="Delete_Click" Visibility="Hidden">Удалить</Button>
+                <Label/>
+                <Button x:Name="Edit" Background="#FFCC6600" Click="Edit_Click" Visibility="Hidden">Изменить</Button>
+            </StackPanel>
+            <Label/>
+            <ScrollViewer Height="570" Width="1400">
+                <StackPanel x:Name="ProductView"/>
+            </ScrollViewer>
+            <Button x:Name="back" Background="#FFCC6600" FontFamily="Comic Sans MS" Click="back_Click">Вернуться</Button>
+            <Label/>
+            <Button x:Name="exit" Background="#FFCC6600" FontFamily="Comic Sans MS" Click="exit_Click">Выход</Button>
+        </StackPanel>
+    </Grid>
+</Window>
