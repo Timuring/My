@@ -52,7 +52,7 @@ create table Products
   foreign key (CategoryID) references Category(CategoryID),
   ProductPhoto longblob,
   ManufacturerID int not null,
-  ProductCost decimal(19,4) not null,
+  ProductCost decimal(19,2) not null,
   ProductDiscountAmount tinyint null,
   ProductQuantityInStock int not null,
   ProductStatus text,
